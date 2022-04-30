@@ -8,8 +8,8 @@ jobs:
   test_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout to release
-        uses: actions/checkout@v3
+#      - name: Checkout to release
+#        uses: actions/checkout@v3
 
 #      - name: Docker Login
 #       uses: docker/login-action@v1
@@ -29,12 +29,12 @@ jobs:
         with:
           payload: |
             {
-              "Name" : "Soon Zhong Wei, Emmanuel",
-              "Matriculation" : "A0110644U",
-              "Email" : "reach.emmanuelsoon@gmail.com",
-              "Repo" : "git@github.com:EmmanuelSoon/randnum.git",
-              "Image name" : "emmanuelsoon/randnum:ref",
-              "Image url" : "https://hub.docker.com/repository/docker/emmanuelsoon/randnum"
+              "Name": "Soon Zhong Wei, Emmanuel",
+              "Matriculation": "A0110644U",
+              "Email": "reach.emmanuelsoon@gmail.com",
+              "Repo": "git@github.com:EmmanuelSoon/randnum.git",
+              "Image name": "emmanuelsoon/randnum:ref",
+              "Image url": "https://hub.docker.com/repository/docker/emmanuelsoon/randnum"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
