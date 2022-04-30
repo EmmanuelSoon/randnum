@@ -1,0 +1,10 @@
+name: Testrun
+on:
+  push:
+    branches:
+      -"release"
+
+jobs:
+  test_and_deploy:
+    runs-on: ubuntu-latest
+    
