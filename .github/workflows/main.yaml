@@ -29,13 +29,13 @@ jobs:
         with:
           payload: |
             {
-              "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
+              "text": "SA54 Submission",
               "blocks": [
                 {
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "Name: \n Matriculation: \n Email: \n Repo: \n Image Name: \n Image url: "
+                    "text": "Name: Soon Zhong Wei, Emmanuel \n Matriculation: A0110644U \n Email: reach.emmanuelsoon@gmail.com \n Repo: ${{github.repositoryUrl}} \n Image Name: emmanuelsoon/randnum:ref \n Image url: https://hub.docker.com/repository/docker/emmanuelsoon/randnum"
                   }
                 }
               ]
