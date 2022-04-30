@@ -35,7 +35,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "Name: \n Matric number: \n "
+                    "text": "Name: \n Matriculation: \n Email: \n Repo: \n Image Name: \n Image url: "
                   }
                 }
               ]
