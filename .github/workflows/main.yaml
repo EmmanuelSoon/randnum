@@ -29,8 +29,16 @@ jobs:
         with:
           payload: |
             {
-              "text": "Name:",
-              "text": "Matriculation:"
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": "Name:"
+                },
+                {
+                  "type": "section",
+                  "text": "Matriculation:"
+                },
+              ]
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
