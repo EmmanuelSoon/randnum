@@ -29,12 +29,12 @@ jobs:
         with:
           payload: |
             {
-              "Name":"Soon Zhong Wei, Emmanuel",
-              "Matriculation":"A0110644U",
-              "Email":"reach.emmanuelsoon@gmail.com",
-              "Repo": "git@github.com:EmmanuelSoon/randnum.git",
-              "Image name":"emmanuelsoon/randnum:ref",
-              "Image url":"https://hub.docker.com/repository/docker/emmanuelsoon/randnum"
+              "Text": "Name: Soon Zhong Wei, Emmanuel",
+              "Text": "Matriculation: A0110644U",
+              "Text": "Email: reach.emmanuelsoon@gmail.com",
+              "Text": "Repo: git@github.com:EmmanuelSoon/randnum.git",
+              "Text": "Image name: emmanuelsoon/randnum:ref",
+              "Text": "Image url: https://hub.docker.com/repository/docker/emmanuelsoon/randnum"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
