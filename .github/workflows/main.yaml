@@ -28,7 +28,7 @@ jobs:
       
       - name: Sending message to slack workflow
         id: slack
-        uses: slackapi/slack-github-action@1.18.0
+        uses: slackapi/slack-github-action@v1.18.0
         with:
           payload: |
             {
@@ -36,7 +36,8 @@ jobs:
               "Matriculation" : "A0110644U",
               "Email" : "reach.emmanuelsoon@gmail.com",
               "Repo" : "git@github.com:EmmanuelSoon/randnum.git"
-              "Image Name" : "emmanuelsoon/randnum:ref"
+              "Image Name" : "emmanuelsoon/randnum:ref",
+              "Image Url" : "https://hub.docker.com/repository/docker/emmanuelsoon/randnum"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
