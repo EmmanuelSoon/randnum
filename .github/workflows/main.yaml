@@ -32,7 +32,7 @@ jobs:
               "Name":"Soon Zhong Wei, Emmanuel",
               "Matriculation":"A0110644U",
               "Email":"reach.emmanuelsoon@gmail.com",
-              "Repo": echo  ${{ github.repositoryUrl }},
+              "Repo": ${{ github.ref_name }},
               "Image name":"emmanuelsoon/randnum:ref",
               "Image url":"https://hub.docker.com/repository/docker/emmanuelsoon/randnum"
             }
