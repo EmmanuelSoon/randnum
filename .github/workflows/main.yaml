@@ -30,7 +30,7 @@ jobs:
         id: slack
         uses: slackapi/slack-github-action@1.18.0
         with:
-          payload: 
+          payload: |
             {
               "Name" : "Soon Zhong Wei, Emmanuel",
               "Matriculation" : "A0110644U",
