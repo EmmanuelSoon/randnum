@@ -1,7 +1,7 @@
 name: Testrun
 on:
   release:
-    types:[published]
+    types: [published]
 
 jobs:
   test_and_deploy:
