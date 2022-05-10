@@ -22,7 +22,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: emmanuelsoon/randnum:${github.ref_name}
+          tags: emmanuelsoon/randnum:${{ github.ref_name }}
       
       - name: Sending message to slack workflow
         id: slack
@@ -36,7 +36,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "Name: Soon Zhong Wei, Emmanuel \n Matriculation: A0110644U \n Email: reach.emmanuelsoon@gmail.com \n Repo: ${{github.repositoryUrl}} \n Image Name: emmanuelsoon/randnum:${github.ref_name} \n Image url: https://hub.docker.com/repository/docker/emmanuelsoon/randnum"
+                    "text": "Name: Soon Zhong Wei, Emmanuel \n Matriculation: A0110644U \n Email: reach.emmanuelsoon@gmail.com \n Repo: ${{github.repositoryUrl}} \n Image Name: emmanuelsoon/randnum:${{ github.ref_name }} \n Image url: https://hub.docker.com/repository/docker/emmanuelsoon/randnum"
                   }
                 }
               ]
